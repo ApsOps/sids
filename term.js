@@ -99,7 +99,7 @@ function compileHomeScreen() {
 	homeScreen=new Array();
 	homeScreen.push(frameLine);
 	homeScreen.push(frameLine);
-	homeScreen.push( pad(10, '%c(green2)Welcome, today is Friday, 15th of November. It\'s your Birthday! :D%c(0)') ); //'+logDate+'
+	homeScreen.push( pad(10, '%c(green2)Welcome, it\'s Monday, 18th of November. It\'s your Birthday! :D%c(0)') ); //'+logDate+'
 	homeScreen.push(frameLine);
 	for (i=0, l=googleLogo.length; i<l; i++) homeScreen.push( pad(11, googleLogo[i]) );
 	homeScreen.push(frameLine);
@@ -128,7 +128,7 @@ function termOpen() {
 }
 
 function termInitHandler() {
-	this.type('sids@SIDS-PC:~/special/aju$');
+	this.type('sids@SIDS-PC:~/xperis/Tyler.Durden$');
 	this.cursorOn();
 	var opts='';
 	if (logName) opts=' /u="'+logName+'"';
