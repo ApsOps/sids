@@ -64,8 +64,8 @@ var initialPrompts = [
 
 function init() {
 	var i, d=new Date();
-	logDate = weekdays[d.getUTCDay()]+' '+d.getUTCDate()+' '+months[d.getUTCMonth()]+' '+d.getUTCFullYear();
-	logTime = normalize(d.getUTCHours(),2)+':'+normalize(d.getUTCMinutes(),2)+':'+normalize(d.getUTCSeconds(),2);
+	logDate = weekdays[d.getDay()]+' '+d.getDate()+' '+months[d.getMonth()]+' '+d.getFullYear();
+	logTime = normalize(d.getHours(),2)+':'+normalize(d.getMinutes(),2)+':'+normalize(d.getSeconds(),2);
 	getParams();
 	if (params) {
 		var n=params.u || params.user;
